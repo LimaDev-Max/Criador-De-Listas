@@ -17,7 +17,7 @@
 }
 
 :root {
-    --cor0:#c5ebd6;
+    --cor0:#daa0ab;
     --cor1:#83e1ad;
     --cor2:#3ddc84;
     --cor3:#DB2C4C;
@@ -114,9 +114,65 @@ main h1 {
     font-size: 1.5em;
 }
 
-.horario{
+.selectCor{
     text-align: center;
 }
+
+.selectCor select{
+    width: 50%;
+    height: 50px;
+    margin: 20px 0;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid black;
+    font-size: 18px;
+    text-align: center;
+}
+
+.horario{
+    height: 100px;
+    text-align: center;
+}
+
+.horario input[type=time]{
+    width: 39%;
+    height: 50px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 200%;
+    text-align: center;
+}
+
+.selectQtd{
+    text-align: center;
+    height: 100px;
+}
+
+.selectQtd select{
+    width: 50%;
+    height: 50px;
+    margin: 20px 0;
+    border-radius: 10px 10px 0px 0px; 
+    border: 1px solid black;
+    font-size: 18px;
+    text-align: center;
+}
+
+.sinais{
+    text-align: center;
+}
+
+.sinais input[type=number]{
+    width: 30%;
+    height: 50px;
+    margin: 20px 0;
+    border-radius: 10px; 
+    border: 1px solid black;
+    font-size: 18px;
+    text-align: center;
+}
+
+
 
 main h2 {
     font-family: var(--fonte-android);
@@ -180,7 +236,7 @@ div.video > iframe {
 }
 
 aside {
-    background-color: var(--cor1);
+    background-color: var(--cor0);
     padding: 10px;
     border-radius: 10px;
     box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.281);
