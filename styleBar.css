@@ -1,0 +1,28 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.text{
+    padding: 30px;
+}
+
+#scroll{
+    top: 0;
+    right: 0;
+    background: #ffc000;
+    width: 12px;
+    height: 100%;
+    position: fixed;
+    box-shadow: 0 0 10px #ffc000, 0 0 20px #ffc000, 0 0 40px #ffc000;
+    border-radius: 10px;
+}
