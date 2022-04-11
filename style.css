@@ -17,12 +17,13 @@
 }
 
 :root {
-    --cor0:#daa0ab;
-    --cor1:#83e1ad;
+    --cor0:white; /*Cor Textos*/
+    --cor1:#1D2730; /*Cor Caixas*/
     --cor2:#3ddc84;
     --cor3:#DB2C4C;
-    --cor4:#F02C20;
+    --cor4:#F12C4C;
     --cor5:#70170F;
+    --cor6:#0F1923; /*Cor Site*/
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'bebas neue';
@@ -37,7 +38,7 @@
 }
 
 body {
-    background-color: var(--cor0);
+    background-image: linear-gradient(to top, var(--cor3), var(--cor6));
     font-family: var(--fonte-padrao);
 }
 
@@ -46,12 +47,12 @@ a.externo::after {
 }
 
 header {
-    background-image: url(lines_red_background_bright-Design_HD_Wallpapers_1366x768.jpg);
+    background-image: linear-gradient(to top, var(--cor6), var(--cor3));
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 250px;
     text-align: center;
-    padding-top: 40px;
+
 }
 
 header > h1 {
@@ -72,7 +73,6 @@ header > p {
     max-width: 500px;
     padding-right: 10px;
     padding-left: 10px;
-    
     margin: auto;
     padding-bottom: 30px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.308);
@@ -80,7 +80,7 @@ header > p {
 }
 
 nav {
-    background-image:url(lines_red_background_bright-Design_HD_Wallpapers_1366x768.jpg);
+    background: var(--cor6);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 10px;
@@ -94,14 +94,14 @@ main {
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
-    background-color: white;
+    background-color: var(--cor6);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
 main h1 {
-    color: var(--cor5) ;
+    color: white;
     font-family: var(--fonte-android);
     font-weight: normal;
     font-size: 1.7em;
@@ -172,7 +172,19 @@ main h1 {
     text-align: center;
 }
 
+.btn{
+    text-align: center;
+    
+}
 
+.btn button{
+    width: 15%;
+    height: 5%;
+    margin: 20px 0;
+    border-radius: 5px;
+    background-color: green; 
+    font-size: 18px;
+}
 
 main h2 {
     font-family: var(--fonte-android);
@@ -236,10 +248,10 @@ div.video > iframe {
 }
 
 aside {
-    background-color: var(--cor0);
+    background-color: var(--cor6);
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.281);
+   
 }
 
 aside > h3 {
@@ -257,7 +269,7 @@ aside > ul {
 }
 
 footer {
-    background-color: var(--cor5);
+    background-color: var(--cor6);
     color: white;
     text-align: center;
     font-size: 0.8em;
