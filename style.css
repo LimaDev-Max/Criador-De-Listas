@@ -38,7 +38,7 @@
 }
 
 body {
-    background-image: linear-gradient(to top, var(--cor3), var(--cor6));
+    bac
     font-family: var(--fonte-padrao);
 }
 
@@ -47,11 +47,11 @@ a.externo::after {
 }
 
 header {
-    background-image: linear-gradient(to top, var(--cor6), var(--cor3));
+    background: black;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 250px;
-    text-align: center;
+    min-height: ;
+    text-align:;
 
 }
 
@@ -261,6 +261,8 @@ aside > h3 {
     margin: -10px -10px 0px -10px;
     border-radius: 10px 10px 0px 0px;
 }
+
+
 
 aside > ul {
     list-style-type: '\2714\00A0\00A0';
