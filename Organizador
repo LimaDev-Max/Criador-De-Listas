@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Organizador de Lista</title>
+</head>
+<body class="p-3 mb-2 bg-dark text-white" >
+ <div class="container mt-5 col-12 text-center">
+    <h2>ORGANIZADOR DE LISTA</h2>
+    <br>
+    <div>
+       <input type="text" id="lista" value="" class="container-lg" placeholder="COLE SUA LISTA AQUI" style="text-align: center;">
+        <br>
+        <br>
+       <button id="org" class="btn btn-warning">ORGANIZAR</button>
+       <hr>
+    </div>
+    <div>
+       
+    </div>
+    <div>
+        <h1>Resultado</h1>
+        <div id="resultado"></div>
+    </div>
+    <br>
+    <div>
+        <button class="btn btn-primary" id="copy">COPIAR</button>
+    </div>
+    <hr>
+    <div>
+        <button class="btn btn-danger" id="back">VOLTAR</button>
+    </div>
+   
+   
+ </div>
+    <script>
+        const btnCopy = document.getElementById('copy')
+        const inputLista = document.getElementById('lista')
+        const btnOrg = document.getElementById('org')
+        const list = []
+        const result = document.getElementById('resultado')
+        const back = document.getElementById('back')
+
+
+        btnOrg.addEventListener('click', (e) => {
+            let separa = inputLista.value.split(';')
+            separa.sort()
+           
+            for(i = 0; i < separa.length; i++){
+
+                if(separa[i] === separa[i]){
+                    console.log(separa[i])
+                }
+
+                result.innerHTML += `<div id="ita">${separa[i]}</div>`
+            }
+            // result.innerHTML += `${separa.sort()}`
+
+        })
+        
+        btnCopy.addEventListener('click', () =>{
+            navigator.clipboard.writeText(result.innerText)
+        })
+
+        back.addEventListener('click', ()=> {
+            window.history.back()
+        })
+    </script>
+</body>
+</html>
