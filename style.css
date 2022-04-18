@@ -38,7 +38,7 @@
 }
 
 body {
-    bac
+    background-image: linear-gradient(to top, var(--cor3), var(--cor6));
     font-family: var(--fonte-padrao);
 }
 
@@ -47,11 +47,11 @@ a.externo::after {
 }
 
 header {
-    background: black;
+   background-image: url(img/bg-hero-shape.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: ;
-    text-align:;
+    min-height: 400px;
+    text-align: center;
 
 }
 
